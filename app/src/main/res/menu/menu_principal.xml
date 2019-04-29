@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mFav"
+        android:icon="@drawable/ic_star"
+        android:title="Favorito"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mBusca"
+        android:icon="@drawable/ic_busca"
+        android:title="Busca"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/mMail"
+        android:icon="@drawable/ic_email"
+        android:title="Email"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/mLocal"
+        android:icon="@drawable/ic_location"
+        android:title="Local"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

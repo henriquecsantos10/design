@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">design</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="Filmes">Settings
+        <item>Mulher Maravilha</item>
+        <item>Batman</item>
+        <item>Lanterna Verde</item>
+        <item>Aquaman</item>
+        <item>Flash</item>
+    </string-array>
+</resources>

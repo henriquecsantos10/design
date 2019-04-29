@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tldprincipal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Selecione Sexo:" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdbMasculino"
+            style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/rdbFeminino"
+            style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feminíno" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Lista de Desejos" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3">
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/chkmusica"
+                style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Músicas" />
+
+            <CheckBox
+                android:id="@+id/chkFutebol"
+                style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Futebol" />
+
+            <CheckBox
+                android:id="@+id/chkCorrida"
+                style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Corrida" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/chkBicicleta"
+                style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bicicleta" />
+
+            <CheckBox
+                android:id="@+id/chkBarco"
+                style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Barco" />
+
+            <CheckBox
+                android:id="@+id/chkParaquetas"
+                style="@style/Base.Widget.AppCompat.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paraquedas" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Selecione Filme" />
+
+    <Spinner
+        android:id="@+id/spnFilmes"
+        style="@style/Platform.Widget.AppCompat.Spinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/Filmes" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Som  "
+        android:checked="true"
+        android:id="@+id/sgtSom"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Switch"/>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".TesteActivity">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/botaoflutuante"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+             />
+
+    </RelativeLayout>
+</LinearLayout>
+
+
